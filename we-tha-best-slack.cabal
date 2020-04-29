@@ -1,0 +1,41 @@
+cabal-version: 2.2
+name:
+  we-tha-best-slack
+version:
+  0.1
+synopsis:
+  dj khaled slackbot
+description:
+  We Tha Best SlackBot! If you send a message to any channel that includes the phrase
+  'another one', djkhaledbot will reply with a random dj khaled quote.
+bug-reports:
+  github.com/chessai/we-tha-best-slack/issues
+license:
+  MIT
+license-file:
+  LICENSE
+author:
+  chessai
+maintainer:
+  chessai1996@gmail.com
+category:
+  Web, Slack
+build-type:
+  Simple
+extra-source-files:
+  CHANGELOG.md
+  README.md
+
+executable we-tha-best-slack
+  main-is:
+    Main.hs
+  build-depends:
+    , base
+    , containers
+    , random
+    , slack-api
+    , text
+  hs-source-dirs:
+    src
+  default-language:
+    Haskell2010
